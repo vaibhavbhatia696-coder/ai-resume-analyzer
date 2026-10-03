@@ -1703,7 +1703,7 @@ if analyze_clicked:
                     💡 {html.escape(suggestion)}
                 </div>
                 """,
-                unsafe_allow_html=True,
+        
             )
 
     else:
