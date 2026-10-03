@@ -1356,7 +1356,7 @@ if analyze_clicked:
 
     with score_col1:
 
-        st.markdown(
+        st.html(
             f"""
             <div class="metric-card">
 
@@ -1370,13 +1370,12 @@ if analyze_clicked:
 
             </div>
             """,
-            unsafe_allow_html=True,
         )
 
 
     with score_col2:
 
-        st.markdown(
+        st.html(
             f"""
             <div class="metric-card">
 
@@ -1390,13 +1389,12 @@ if analyze_clicked:
 
             </div>
             """,
-            unsafe_allow_html=True,
         )
 
 
     with score_col3:
 
-        st.markdown(
+        st.html(
             f"""
             <div class="metric-card">
 
@@ -1410,7 +1408,6 @@ if analyze_clicked:
 
             </div>
             """,
-            unsafe_allow_html=True,
         )
 
 
@@ -1439,7 +1436,7 @@ if analyze_clicked:
 
     with ats_col1:
 
-        st.markdown(
+        st.html(
             f"""
             <div class="score-card">
 
@@ -1461,7 +1458,6 @@ if analyze_clicked:
 
             </div>
             """,
-            unsafe_allow_html=True,
         )
 
 
@@ -1475,24 +1471,22 @@ if analyze_clicked:
 
             if status:
 
-                st.markdown(
+                st.html(
                     f"""
                     <div class="ats-item">
                         🟢 {html.escape(section)}
                     </div>
                     """,
-                    unsafe_allow_html=True,
                 )
 
             else:
 
-                st.markdown(
+                st.html(
                     f"""
                     <div class="ats-item">
                         🔴 {html.escape(section)}
                     </div>
                     """,
-                    unsafe_allow_html=True,
                 )
 
 
@@ -1511,7 +1505,7 @@ if analyze_clicked:
 
     with keyword_col1:
 
-        st.markdown(
+        st.html(
             f"""
             <div class="metric-card">
 
@@ -1525,13 +1519,12 @@ if analyze_clicked:
 
             </div>
             """,
-            unsafe_allow_html=True,
         )
 
 
     with keyword_col2:
 
-        st.markdown(
+        st.html(
             f"""
             <div class="metric-card">
 
@@ -1545,13 +1538,12 @@ if analyze_clicked:
 
             </div>
             """,
-            unsafe_allow_html=True,
         )
 
 
     with keyword_col3:
 
-        st.markdown(
+        st.html(
             f"""
             <div class="metric-card">
 
@@ -1565,7 +1557,6 @@ if analyze_clicked:
 
             </div>
             """,
-            unsafe_allow_html=True,
         )
 
 
@@ -1706,7 +1697,7 @@ if analyze_clicked:
 
         for suggestion in suggestions:
 
-            st.markdown(
+            st.html(
                 f"""
                 <div class="suggestion">
                     💡 {html.escape(suggestion)}
